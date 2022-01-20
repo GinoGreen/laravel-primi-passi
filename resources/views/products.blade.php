@@ -25,10 +25,25 @@
    </header>
    
 
-   <div class="container">
-
+   <div class="container d-flex flex-wrap">
+      @foreach ($products as $product)
+      <div class="card my-5 me-4" style="width: 18rem;">
+         <img src="https:/{{ $product['imgURL'] }}" class="card-img-top" alt="potato">
+         <div class="card-body">
+            <h5 class="card-title">{{ $product['title'] }}</h5>
+            <p class="card-text">{{ $product['description'] }}.</p>
+         </div>
+         <ul class="list-group list-group-flush">
+            <li class="list-group-item">Prezzo: {{ $product['price'] }}€</li>
+         </ul>
+         <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+         </div>
+      </div>
+      @endforeach
    </div>
-
+   
    <footer class="mt-5">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="container-fluid">
