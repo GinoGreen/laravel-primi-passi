@@ -24,8 +24,10 @@
        </nav>
    </header>
    
-   <div class="container">
-
+   <div class="container d-flex flex-column align-items-center">
+      <h1 class="text-center my-5">Chi Siamo?</h1>
+      <h3 class="text-center mb-5">Me lo sto chiedendo anch'io</h3>
+      <img src="https://images.emojiterra.com/google/android-10/512px/1f914.png" alt="">
    </div>
 
    <footer class="mt-5">
